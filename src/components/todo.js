@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Modal from "./components/modal";
-import Backdrop from "./components/backdrop";
+import Modal from "./modal";
+import Backdrop from "./backdrop"
+// import Backdrop from "./components/backdrop";
 
 function Todo(props) {
   const [showModal, setShowModal] = useState(false);
