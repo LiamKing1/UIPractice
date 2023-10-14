@@ -12,6 +12,10 @@ function Todo(props) {
     setShowModal(true);
   }
 
+  function closeModalHandler() {
+    setShowModal(false);
+  }
+
   return (
     <div className="card">
       {/* Props is taking the 'text' property from where the component is being rendered
@@ -23,8 +27,8 @@ function Todo(props) {
         </button>
       </div>
       {/* Ternary Expression */}
-      {showModal && <Modal /> }
-      {showModal && <Backdrop /> }
+      {showModal && <Modal onCancel={closeModalHandler} onConfirm={closeModalHandler}/> }
+      {showModal && <Backdrop onCancel={closeModalHandler}/> }
       {/* Can otherwise be written like the example below called a Ternary expression
        {showModal ? <Modal /> : null} 
        {showModal ? <Backdrop /> : null} */}
