@@ -1,5 +1,7 @@
 function Backdrop() {
-  return <div className="backdrop" />;
+  return (
+  <div className="backdrop" />
+  );
 }
 
 export default Backdrop;
